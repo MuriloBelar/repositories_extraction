@@ -168,7 +168,7 @@ It wasn't mentioned yet, but I chose two layers: `landing` and `curated`.
 
 - **Repositories Bucket**:  
   Repositories bucket is not an Iceberg catalog, but rather a usual blob storage with files for each commit:  
-  ![MinIO Repositories](assets/minion_repos.png)
+  ![MinIO Repositories](assets/minio_repos.png)
 
 - **Trino UI**:  
   Trino can be useful to check query logs and cluster health. Here is an image from Trino's UI from a query:  
