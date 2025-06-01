@@ -1,0 +1,6 @@
+requests
+python-dotenv
+pydriller
+minio
+trino
+pandas

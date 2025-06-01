@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.env.*
+
+# Airflow
+airflow.db
+airflow.cfg
+logs/
+dags/__pycache__/
+
+# Docker
+*.pid
+*.log
+*.pidfile
+*.sock
+docker-compose.override.yml
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# System
+Thumbs.db
+.idea/
+
+# Pytest cache
+.pytest_cache/
+
+# Byte-compiled / optimized / DLL files
+*.pyd
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Local data/output
+*.sqlite3
+*.db
+*.bak
+*.tmp
+*.swp
+
+# MinIO / Trino / Iceberg temp files
+*.parquet
+*.orc
+*.avro
+storage/
+catalog/
+mc/

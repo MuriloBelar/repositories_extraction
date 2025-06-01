@@ -1,0 +1,28 @@
+[project]
+name = "repositories-extraction"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "MuriloBelar",email = "murilobelarmino1@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "pydriller (>=2.7,<3.0)",
+    "minio (>=7.2.15,<8.0.0)",
+    "trino (>=0.334.0,<0.335.0)",
+    "pandas (>=2.2.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "repositories_extraction", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
