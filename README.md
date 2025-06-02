@@ -78,7 +78,7 @@ To fulfill the requirements, I had to extract:
 
 - Repos information  
 - Commits information  
-- Files for commits  
+- Commit details
 
 For now, GitHub was the only source, so sticking to their API can be handy. Even though rate limits can be a limitation, it's a better experience than using libraries like PyDriller, which require repository cloning (some repos can be heavy).
 
@@ -133,6 +133,7 @@ First commits of repos won't have a parent and also some commits can have multip
 I'm assuming here the one-parent case only and also ignoring when a commit doesn't have a parent.  
 This is an improvement for future iterations and must be addressed to ensure data consistency.
 
+Note that landing tables are not covered here, so that's why there is no mention do Repositories table, since it's an intermediate step to achieve the schema in curated layer
 ---
 
 ## Scripts

@@ -18,7 +18,7 @@ HEADERS: Dict[str, str] = {
 
 def fetch_commits_for_repo(
     owner_repo: str,
-    limit: int = 10,
+    limit: int = 15,
     since: Optional[str] = None,
     until: Optional[str] = None
 ) -> List[Dict[str, Any]]:
